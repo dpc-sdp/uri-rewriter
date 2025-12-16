@@ -1,4 +1,4 @@
-module github.com/nicksantamaria/uri-rewriter
+module github.com/dpc-sdp/uri-rewriter
 
 go 1.24.0
 

@@ -7,8 +7,8 @@ import (
 
 	cli "github.com/urfave/cli/v3"
 
-	hostname_cname "github.com/nicksantamaria/uri-rewriter/internal/cmd/hostname-cname"
-	"github.com/nicksantamaria/uri-rewriter/internal/cmd/version"
+	hostname_cname "github.com/dpc-sdp/uri-rewriter/internal/cmd/hostname-cname"
+	"github.com/dpc-sdp/uri-rewriter/internal/cmd/version"
 )
 
 var (

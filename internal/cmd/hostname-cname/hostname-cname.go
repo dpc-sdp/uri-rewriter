@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/nicksantamaria/uri-rewriter/internal/helpers"
+	"github.com/dpc-sdp/uri-rewriter/internal/helpers"
 	"github.com/urfave/cli/v3"
 )
 

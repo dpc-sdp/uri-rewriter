@@ -15,7 +15,7 @@ A small Go command-line utility to rewrite the hostname component of a URI using
 ## Install
 
 ```bash
-git clone https://github.com/nicksantamaria/uri-rewriter.git
+git clone https://github.com/dpc-sdp/uri-rewriter.git
 cd uri-rewriter
 go build .
 # The binary will be at ./uri-rewriter
@@ -24,7 +24,7 @@ go build .
 Or install directly with Go:
 
 ```bash
-go install github.com/nicksantamaria/uri-rewriter@latest
+go install github.com/dpc-sdp/uri-rewriter@latest
 ```
 
 ## Usage
