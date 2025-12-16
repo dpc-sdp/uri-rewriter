@@ -2,31 +2,6 @@
 
 A small Go command-line utility to rewrite the hostname component of a URI using DNS CNAME records.
 
-## Features
-
-- Uses `github.com/urfave/cli/v2` for command definition
-- Subcommand: `hostname-cname`
-- Flag: `--cname-level, -l` (default: 1)
-- Accepts a single URI argument
-- Performs a DNS lookup of the URI's hostname and follows its CNAME chain
-- Replaces the hostname with the CNAME at the requested level
-- Writes only the rewritten URI to stdout (no extra output)
-
-## Install
-
-```bash
-git clone https://github.com/dpc-sdp/uri-rewriter.git
-cd uri-rewriter
-go build .
-# The binary will be at ./uri-rewriter
-```
-
-Or install directly with Go:
-
-```bash
-go install github.com/dpc-sdp/uri-rewriter@latest
-```
-
 ## Usage
 
 ```bash
@@ -72,6 +47,21 @@ uri-rewriter hostname-cname -l 1 "https://www.example.com:8443/path"
 - Only the rewritten URI is printed to stdout. Errors (e.g., invalid URI, DNS failures) are written to stderr with a non-zero exit code.
 - The tool follows the system resolver configuration (`/etc/resolv.conf`) to query CNAME records. If it is unavailable, it falls back to public resolvers (Cloudflare `1.1.1.1` and Google `8.8.8.8`).
 - Trailing dots in DNS names (e.g., `example.com.`) are removed in the output for URI compatibility.
+
+## Install
+
+```bash
+git clone https://github.com/dpc-sdp/uri-rewriter.git
+cd uri-rewriter
+go build .
+# The binary will be at ./uri-rewriter
+```
+
+Or install directly with Go:
+
+```bash
+go install github.com/dpc-sdp/uri-rewriter@latest
+```
 
 ## License
 
